@@ -13,14 +13,14 @@ Status: Doing
      
     
 - **Contenido Teórico:**
-    - **Lección 1: MRE (MODELO ENTIDAD RELACION) (TEORIA).**
-        - link 1
-        - link2
-    - **Lección 2: Generación de bases de datos a partir de MRE y DML** (TEORIA).
-        - link 1
-        - link2
-    - Lección 3: Consultas Básicas con SQL (Teoría ):
-        - Teoría
+    - **Lección 1: Diseño de Bases de Datos Relacionales.**
+        - [link teoria]()
+        
+    - **Lección 2: UF2175 - Sistemas Gestores de Bases de Datos (SGBD) e Instalación.** 
+        - [link teoria]()
+    
+    ... 
+    
 - **Problemas de práctica:**
     - link Base datos 1
     - link Base datos 2
