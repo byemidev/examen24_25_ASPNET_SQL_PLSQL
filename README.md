@@ -14,7 +14,7 @@ Status: Doing
     
 - **Contenido Teórico:**
     - **Lección 1: UF2175 - Diseño de Bases de Datos Relacionales.**
-        - [link teoria]()
+        - [link teoria](https://github.com/byemidev/examen24_25_ASPNET_SQL_PLSQL/blob/main/leccion_1/Summary%20of%20UF2175%20-%20Disen%CC%83o%20de%20Bases%20de%20Datos%20Rela%20cc3700312b824a1db37ddd1ae0d47bab.md)
         
     - **Lección 2: UF2175 - Sistemas Gestores de Bases de Datos (SGBD) e Instalación.** 
         - [link teoria](https://github.com/byemidev/examen24_25_ASPNET_SQL_PLSQL/blob/main/leccion_1/Summary%20of%20UF2175%20-%20Disen%CC%83o%20de%20Bases%20de%20Datos%20Rela%20cc3700312b824a1db37ddd1ae0d47bab.md)
@@ -22,9 +22,9 @@ Status: Doing
     ... 
 
 - **Problemas de práctica:**
-    - link Base datos 1
-    - link Base datos 2
-    - link Base datos 3
+    - [link practica 1](https://github.com/byemidev/examen24_25_ASPNET_SQL_PLSQL/tree/main/practica/practica1)
+    - [link practica 2](https://github.com/byemidev/examen24_25_ASPNET_SQL_PLSQL/tree/main/practica/practica2)
+    
 - **Tarjetas:**
     - Usa Anki (u otra aplicación de tarjetas de memoria) para crear tarjetas con términos y artistas clave.
     - Kahoot (20 preguntas por modulo entre los que seamos en el repo)
