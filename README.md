@@ -24,6 +24,7 @@ Status: Doing
 - **Problemas de práctica:**
     - [link practica 1](https://github.com/byemidev/examen24_25_ASPNET_SQL_PLSQL/tree/main/practica/practica1)
     - [link practica 2](https://github.com/byemidev/examen24_25_ASPNET_SQL_PLSQL/tree/main/practica/practica2)
+    - [link practica 3](https://github.com/byemidev/examen24_25_ASPNET_SQL_PLSQL/tree/main/practica/practica3)
     
 - **Tarjetas:**
     - Usa Anki (u otra aplicación de tarjetas de memoria) para crear tarjetas con términos y artistas clave.
