@@ -22,8 +22,8 @@ Status: Doing
     ... 
 
 - **Problemas de práctica:**
-    - [link practica 1 - SQL Basico con 2 tablas.](https://github.com/byemidev/examen24_25_ASPNET_SQL_PLSQL/tree/main/practica/practica1)
-    - [link practica 2 - SQL Basico con 3 tablas.](https://github.com/byemidev/examen24_25_ASPNET_SQL_PLSQL/tree/main/practica/practica2)
+    - [link practica 1 - SQL Basico con 2 tablas on MySQL.](https://github.com/byemidev/examen24_25_ASPNET_SQL_PLSQL/tree/main/practica/practica1)
+    - [link practica 2 - SQL Basico con 3 tablas on MySQL.](https://github.com/byemidev/examen24_25_ASPNET_SQL_PLSQL/tree/main/practica/practica2)
     - [link practica 3 - SQL avanzado (warring: DB from Oracle enviroment)](https://github.com/byemidev/examen24_25_ASPNET_SQL_PLSQL/tree/main/practica/practica3)
     
 - **Tarjetas:**
