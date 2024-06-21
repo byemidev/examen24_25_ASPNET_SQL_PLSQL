@@ -13,14 +13,14 @@ Status: Doing
      
     
 - **Contenido Teórico:**
-    - **Lección 1: Diseño de Bases de Datos Relacionales.**
+    - **Lección 1: UF2175 - Diseño de Bases de Datos Relacionales.**
         - [link teoria]()
         
     - **Lección 2: UF2175 - Sistemas Gestores de Bases de Datos (SGBD) e Instalación.** 
         - [link teoria]()
     
     ... 
-    
+
 - **Problemas de práctica:**
     - link Base datos 1
     - link Base datos 2
