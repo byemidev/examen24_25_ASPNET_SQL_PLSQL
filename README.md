@@ -5,6 +5,19 @@ Status: Doing
 
 ## ¿Qué hay aquí?
 
+**Noticias:**
+- Practica estudio por [discord](https://discord.gg/CTFSVVpp) a las 10. [Ir a evento](https://discord.gg/NMxbmuwS?event=1254016055546871860).
+
+
+- **Usa el repositorio:**
+    
+    # Installing git
+     - [download Git](https://www.git-scm.com/download/win)
+
+    # Clone the repository
+    git clone https://github.com/byemidev/examen24_25_ASPNET_SQL_PLSQL.git
+   
+  
 - **Materiales del Curso:**
     
     
@@ -41,17 +54,8 @@ Status: Doing
 - **PDF's Aula: Adonet, SQL CheatSheet, SQLSentences Examples:** [link](https://github.com/byemidev/examen24_25_ASPNET_SQL_PLSQL/tree/main/ejemplosCheatSheetAula)
     
 - **Tarjetas:**
-    - Usa Anki (u otra aplicación de tarjetas de memoria) para crear tarjetas con términos y artistas clave.
     - Kahoot (20 preguntas por modulo entre los que seamos en el repo)
-- **Mantenerse organizado:**
-    - Recomendaciones:
-    - otro
-- **Consejos adicionales:**
-    
-    Planeo estudiar 2 horas al día, centrándome en 1 lección por sesión.
-    Reunión del grupo de estudio todos los días hasta fecha de examen a las 10. (comunícate con John o Sarah para obtener más detalles).
-    Toma un descanso de 10 minutos cada hora para evitar el agotamiento.
-    
+
 - **¡Siéntete libre de contribuir!**
     
     Siéntete libre de abrir un hilo de conversación sobre cualquiera de los recursos del repositorio.
