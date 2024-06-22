@@ -11,8 +11,7 @@ Status: Doing
 
 # Usa el repositorio:
     
-## 1 -  Installing git
-     - [download Git](https://www.git-scm.com/download/win)
+## 1 -  Installing git [download Git](https://www.git-scm.com/download/win)
 
    ---
 
