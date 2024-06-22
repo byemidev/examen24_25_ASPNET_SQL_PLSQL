@@ -9,14 +9,14 @@ Status: Doing
 - Practica estudio por [discord](https://discord.gg/CTFSVVpp) a las 10. [Ir a evento](https://discord.gg/NMxbmuwS?event=1254016055546871860).
 
 
-- **Usa el repositorio:**
+# Usa el repositorio:
     
-    # Installing git
+## 1 -  Installing git
      - [download Git](https://www.git-scm.com/download/win)
 
    ---
 
-# PowerShell Script for Cloning a Git Repository
+## 2 - PowerShell Script for Cloning a Git Repository
 
 ```powershell
 
