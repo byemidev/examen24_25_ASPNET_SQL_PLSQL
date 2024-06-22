@@ -12,7 +12,7 @@ CREATE TABLE Oficinas (
   LineaDireccion1 varchar(50) NOT NULL,
   LineaDireccion2 varchar(50) DEFAULT NULL,
   PRIMARY KEY (CodigoOficina)
-) ;
+);
 
 INSERT INTO Oficinas VALUES ('BCN-ES','Barcelona','España','Barcelona','08019','+34 93 3561182','Avenida Diagonal, 38','3A escalera Derecha');
 INSERT INTO Oficinas VALUES ('BOS-USA','Boston','EEUU','MA','02108','+1 215 837 0825','1550 Court Place','Suite 102');
@@ -102,7 +102,7 @@ CREATE TABLE Clientes (
   LimiteCredito number(15,2) DEFAULT NULL,
   PRIMARY KEY (CodigoCliente),
   CONSTRAINT Clientes_EmpleadosFK FOREIGN KEY (CodigoEmpleadoRepVentas) REFERENCES Empleados (CodigoEmpleado)
-) ;
+);
 
 INSERT INTO Clientes VALUES (1,'DGPRODUCTIONS GARDEN','Daniel G','GoldFish','5556901745','5556901746','False Street 52 2 A',NULL,'San Francisco',NULL,'USA','24006',19,3000);
 INSERT INTO Clientes VALUES (3,'Gardening Associates','Anne','Wright','5557410345','5557410346','Wall-e Avenue',NULL,'Miami','Miami','USA','24010',19,6000);
@@ -152,6 +152,7 @@ CREATE TABLE Pedidos (
   PRIMARY KEY (CodigoPedido),
   CONSTRAINT Pedidos_Cliente FOREIGN KEY (CodigoCliente) REFERENCES Clientes (CodigoCliente)
 );
+
 alter session set nls_date_format='yyyy-mm-dd';
 
 INSERT INTO Pedidos VALUES (1,'2006-01-17','2006-01-19','2006-01-19','Entregado','Pagado a plazos',5);
@@ -282,7 +283,7 @@ CREATE TABLE Productos (
   PrecioProveedor number(15,2) DEFAULT NULL,
   PRIMARY KEY (CodigoProducto),
   CONSTRAINT Productos_gamaFK FOREIGN KEY (Gama) REFERENCES GamasProductos (Gama)
-) ;
+);
 
 INSERT INTO Productos VALUES ('11679','Sierra de Poda 400MM','Herramientas','0,258','HiperGarden Tools','Gracias a la poda se consigue manipular un poco la naturaleza, dándole la forma que más nos guste. Este trabajo básico de jardinería también facilita que las plantas crezcan de un modo más equilibrado, y que las flores y los frutos vuelvan cada año con regularidad. Lo mejor es dar forma cuando los ejemplares son jóvenes, de modo que exijan pocos cuidados cuando sean adultos. Además de saber cuándo y cómo hay que podar, tener unas herramientas adecuadas para esta labor es también de vital importancia.',15,14,11);
 INSERT INTO Productos VALUES ('21636','Pala','Herramientas','0,156','HiperGarden Tools','Palas de acero con cresta de corte en la punta para cortar bien el terreno. Buena penetración en tierras muy compactas.',15,14,13);
@@ -873,7 +874,7 @@ CREATE TABLE Pagos (
   Cantidad number(15,2) NOT NULL,
   PRIMARY KEY (CodigoCliente,IDTransaccion),
   CONSTRAINT Pagos_clienteFK FOREIGN KEY (CodigoCliente) REFERENCES Clientes (CodigoCliente)
-) ;
+);
 INSERT INTO Pagos VALUES (1,'PayPal','ak-std-000001','2008-11-10',2000);
 INSERT INTO Pagos VALUES (1,'PayPal','ak-std-000002','2008-12-10',2000);
 INSERT INTO Pagos VALUES (3,'PayPal','ak-std-000003','2009-01-16',5000);
