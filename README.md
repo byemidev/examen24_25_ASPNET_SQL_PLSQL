@@ -28,8 +28,10 @@ Status: Doing
         - [link teoria](https://github.com/byemidev/examen24_25_ASPNET_SQL_PLSQL/blob/main/leccion5/Summary%20of%20-%20UF2175_tema5%20Modelo%20Entidad%20Relacion%20%20b78605b358f84f5392869fa65a934c9f.md)
     
 - **SQL for Data Manipulation:**
-- - **Lección 1: SQL -  "Concepto y Declaraciones basicas".** 
-        - [link teoria](https://github.com/byemidev/examen24_25_ASPNET_SQL_PLSQL/blob/main/leccion5/Summary%20of%20-%20UF2175_tema5%20Modelo%20Entidad%20Relacion%20%20b78605b358f84f5392869fa65a934c9f.md)
+  - **Lección 1: SQL -  "Concepto y Declaraciones basicas".** 
+        - [link teoria](https://github.com/byemidev/examen24_25_ASPNET_SQL_PLSQL/blob/main/SQL/SQL%20-%20%20I%20%E2%80%9Cdeclaracion%20y%20tecnicas%20de%20manipulacion%20de%20d%20d04b8cfa6e3044ddb7075e7bb370402b.md)
+  - **Lección 2: SQL -  "Mas de SQL: Vistas, procedimientos, triggers, ...".** 
+        - [link teoria](https://github.com/byemidev/examen24_25_ASPNET_SQL_PLSQL/blob/main/SQL/SQL%20-%20II%20%209e8f5826a06b45248b945ebaa3ceecc2.md)
 
 - **Problemas de práctica:**
     - [link practica 1 - SQL Basico con 2 tablas on MySQL.](https://github.com/byemidev/examen24_25_ASPNET_SQL_PLSQL/tree/main/practica/practica1)
