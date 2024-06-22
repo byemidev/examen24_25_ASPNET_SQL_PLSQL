@@ -37,6 +37,8 @@ Status: Doing
     - [link practica 1 - SQL Basico con 2 tablas on MySQL.](https://github.com/byemidev/examen24_25_ASPNET_SQL_PLSQL/tree/main/practica/practica1)
     - [link practica 2 - SQL Basico con 3 tablas on MySQL.](https://github.com/byemidev/examen24_25_ASPNET_SQL_PLSQL/tree/main/practica/practica2)
     - [link practica 3 - SQL avanzado (warring: DB from Oracle enviroment)](https://github.com/byemidev/examen24_25_ASPNET_SQL_PLSQL/tree/main/practica/practica3)
+
+- **PDF's Aula: Adonet, SQL CheatSheet, SQLSentences Examples:** [link](https://github.com/byemidev/examen24_25_ASPNET_SQL_PLSQL/tree/main/ejemplosCheatSheetAula)
     
 - **Tarjetas:**
     - Usa Anki (u otra aplicación de tarjetas de memoria) para crear tarjetas con términos y artistas clave.
