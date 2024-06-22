@@ -18,6 +18,9 @@ Status: Doing
         
     - **Lección 2: UF2175 - Sistemas Gestores de Bases de Datos (SGBD) e Instalación.** 
         - [link teoria](https://github.com/byemidev/examen24_25_ASPNET_SQL_PLSQL/blob/main/leccion2/Summary%20of%20UF2175%20-%20Database%20Management%20Systems%20(D%20a8e6d336f33e40a8bf550ab71e16f841.md )
+
+    - **Lección 3: UF2175 - Uso y Diseño.** 
+        - [link teoria](https://github.com/byemidev/examen24_25_ASPNET_SQL_PLSQL/blob/main/leccion3/Summary%20of%20UF2175%20Tema%203%209159840b279f4b2b91495d26c92e27ff.md)
     
     ... 
 
