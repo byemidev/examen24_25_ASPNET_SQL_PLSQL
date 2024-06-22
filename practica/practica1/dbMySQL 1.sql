@@ -72,3 +72,19 @@ SELECT nombre, (presupuesto - gastos) AS presu_actual FROM departamento;
 SELECT d.nombre , (d.presupuesto - d.gastos) as presu_actual FROM departamento d ORDER BY presu_actual ASC; 
 SELECT d.nombre , (d.presupuesto - d.gastos) as presu_actual FROM departamento d ORDER BY presu_actual DESC; 
 
+-- curiosidad: el signo _ interoreta cualquier character 
+SELECT d.nombre FROM departamento d WHERE nombre LIKE '_istemas'; 
+
+
+-- practicando consulta multitabla - agrupacion varias tablas en una sola vista 2 ways:
+SELECT e.nombre , e.codigo , d.codigo 
+FROM empleado e , departamento d 
+WHERE d.codigo = e.codigo 
+GROUP BY d.codigo 
+ORDER BY d.codigo ASC; 
+
+SELECT e.nombre, e.codigo , d.codigo 
+FROM empleado e  
+INNER JOIN departamento d 
+WHERE e.codigo = d.codigo 
+ORDER BY d.codigo ASC; 
