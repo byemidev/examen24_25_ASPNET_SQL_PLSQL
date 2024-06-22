@@ -20,8 +20,9 @@ Status: Doing
 
 ```powershell
 
-# Clone the repository from PowerShell console
-git clone $repositoryUrl $localPath
+# Open PowerShell or Bash in the directory that you want to work.
+# Clone the repository.
+git clone https://github.com/byemidev/examen24_25_ASPNET_SQL_PLSQL
 
 
 ```
