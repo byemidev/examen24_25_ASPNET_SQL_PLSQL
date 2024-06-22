@@ -88,3 +88,4 @@ FROM empleado e
 INNER JOIN departamento d 
 WHERE e.codigo = d.codigo 
 ORDER BY d.codigo ASC; 
+
