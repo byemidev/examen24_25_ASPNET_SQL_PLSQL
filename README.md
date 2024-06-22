@@ -15,7 +15,11 @@ Status: Doing
      - [download Git](https://www.git-scm.com/download/win)
 
     # Clone the repository
-    git clone https://github.com/byemidev/examen24_25_ASPNET_SQL_PLSQL.git
+    ```powershell
+# Clone the repository
+git clone https://github.com/byemidev/examen24_25_ASPNET_SQL_PLSQL
+
+```
    
   
 - **Materiales del Curso:**
