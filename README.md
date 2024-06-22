@@ -24,6 +24,8 @@ Status: Doing
      
     - **Lección 4: UF2175 - SQL "Definicion y Uso".** 
         - [link teoria](https://github.com/byemidev/examen24_25_ASPNET_SQL_PLSQL/blob/main/leccion4/Summary%20of%20UF2175%20-%20tema4%20-%20SQL%20%E2%80%9CDefinicion%20y%20uso%E2%80%9D%2014133fe045ef4569a0311cc32d2111f3.md)
+    - **Lección 5: UF2175 -  MRE / Normalizacion "Modelo Entidad Relacion y Formas Normales".** 
+        - [link teoria](https://github.com/byemidev/examen24_25_ASPNET_SQL_PLSQL/blob/main/leccion5/Summary%20of%20-%20UF2175_tema5%20Modelo%20Entidad%20Relacion%20%20b78605b358f84f5392869fa65a934c9f.md)
     
     ... 
 
