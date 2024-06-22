@@ -14,13 +14,17 @@ Status: Doing
     # Installing git
      - [download Git](https://www.git-scm.com/download/win)
 
-    # Clone the repository
-    ```powershell
-# Clone the repository
-git clone https://github.com/byemidev/examen24_25_ASPNET_SQL_PLSQL
+   ---
+
+# PowerShell Script for Cloning a Git Repository
+
+```powershell
+
+# Clone the repository from PowerShell console
+git clone $repositoryUrl $localPath
+
 
 ```
-   
   
 - **Materiales del Curso:**
     
