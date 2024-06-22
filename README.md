@@ -21,6 +21,9 @@ Status: Doing
 
     - **Lección 3: UF2175 - Uso y Diseño.** 
         - [link teoria](https://github.com/byemidev/examen24_25_ASPNET_SQL_PLSQL/blob/main/leccion3/Summary%20of%20UF2175%20Tema%203%209159840b279f4b2b91495d26c92e27ff.md)
+     
+    - **Lección 4: UF2175 - SQL "Definicion y Uso".** 
+        - [link teoria](https://github.com/byemidev/examen24_25_ASPNET_SQL_PLSQL/blob/main/leccion4/Summary%20of%20UF2175%20-%20tema4%20-%20SQL%20%E2%80%9CDefinicion%20y%20uso%E2%80%9D%2014133fe045ef4569a0311cc32d2111f3.md)
     
     ... 
 
