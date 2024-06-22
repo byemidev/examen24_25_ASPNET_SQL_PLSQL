@@ -71,10 +71,10 @@ INSERT INTO Empleados VALUES (29,'Kevin','Fallmer','','3210','kfalmer@gardening.
 INSERT INTO Empleados VALUES (30,'Julian','Bellinelli','','3211','jbellinelli@gardening.com','SYD-AU',29,'Representante Ventas');
 INSERT INTO Empleados VALUES (31,'Mariko','Kishi','','3211','mkishi@gardening.com','SYD-AU',29,'Representante Ventas');
 CREATE TABLE GamasProductos (
-  Gama varchar(50) NOT NULL,
-  DescripcionTexto clob,
-  DescripcionHTML clob,
-  Imagen blob,
+  Gama VARCHAR(50) NOT NULL,
+  DescripcionTexto LONGTEXT,
+  DescripcionHTML LONGTEXT,
+  Imagen LONGBLOB,
   PRIMARY KEY (Gama)
 );
 INSERT INTO GamasProductos VALUES ('Herbaceas','Plantas para jardin decorativas',NULL,NULL);
@@ -86,23 +86,24 @@ INSERT INTO GamasProductos VALUES ('Ornamentales','Plantas vistosas para la deco
 
 
 CREATE TABLE Clientes (
-  CodigoCliente integer NOT NULL,
-  NombreCliente varchar(50) NOT NULL,
-  NombreContacto varchar(30) DEFAULT NULL,
-  ApellidoContacto varchar(30) DEFAULT NULL,
-  Telefono varchar(15) NOT NULL,
-  Fax varchar(15) NOT NULL,
-  LineaDireccion1 varchar(50) NOT NULL,
-  LineaDireccion2 varchar(50) DEFAULT NULL,
-  Ciudad varchar(50) NOT NULL,
-  Region varchar(50) DEFAULT NULL,
-  Pais varchar(50) DEFAULT NULL,
-  CodigoPostal varchar(10) DEFAULT NULL,
-  CodigoEmpleadoRepVentas integer DEFAULT NULL,
-  LimiteCredito number(15,2) DEFAULT NULL,
+  CodigoCliente INT NOT NULL,
+  NombreCliente VARCHAR(50) NOT NULL,
+  NombreContacto VARCHAR(30) DEFAULT NULL,
+  ApellidoContacto VARCHAR(30) DEFAULT NULL,
+  Telefono VARCHAR(15) NOT NULL,
+  Fax VARCHAR(15) NOT NULL,
+  LineaDireccion1 VARCHAR(50) NOT NULL,
+  LineaDireccion2 VARCHAR(50) DEFAULT NULL,
+  Ciudad VARCHAR(50) NOT NULL,
+  Region VARCHAR(50) DEFAULT NULL,
+  Pais VARCHAR(50) DEFAULT NULL,
+  CodigoPostal VARCHAR(10) DEFAULT NULL,
+  CodigoEmpleadoRepVentas INT DEFAULT NULL,
+  LimiteCredito DECIMAL(15, 2) DEFAULT NULL,
   PRIMARY KEY (CodigoCliente),
   CONSTRAINT Clientes_EmpleadosFK FOREIGN KEY (CodigoEmpleadoRepVentas) REFERENCES Empleados (CodigoEmpleado)
 );
+
 
 INSERT INTO Clientes VALUES (1,'DGPRODUCTIONS GARDEN','Daniel G','GoldFish','5556901745','5556901746','False Street 52 2 A',NULL,'San Francisco',NULL,'USA','24006',19,3000);
 INSERT INTO Clientes VALUES (3,'Gardening Associates','Anne','Wright','5557410345','5557410346','Wall-e Avenue',NULL,'Miami','Miami','USA','24010',19,6000);
@@ -142,18 +143,18 @@ INSERT INTO Clientes VALUES (37,'THE MAGIC GARDEN','Richard','Mcain','926523468'
 INSERT INTO Clientes VALUES (38,'El Jardin Viviente S.L','Justin','Smith','2 8005-7161','2 8005-7162','176 Cumberland Street The rocks',NULL,'Sydney','Nueva Gales del Sur','Australia','2003',31,8000);
 
 CREATE TABLE Pedidos (
-  CodigoPedido integer NOT NULL,
-  FechaPedido date NOT NULL,
-  FechaEsperada date NOT NULL,
-  FechaEntrega date DEFAULT NULL,
-  Estado varchar(15) NOT NULL,
-  Comentarios CLOB,
-  CodigoCliente integer NOT NULL,
+  CodigoPedido INT NOT NULL,
+  FechaPedido DATE NOT NULL,
+  FechaEsperada DATE NOT NULL,
+  FechaEntrega DATE DEFAULT NULL,
+  Estado VARCHAR(15) NOT NULL,
+  Comentarios TEXT,
+  CodigoCliente INT NOT NULL,
   PRIMARY KEY (CodigoPedido),
   CONSTRAINT Pedidos_Cliente FOREIGN KEY (CodigoCliente) REFERENCES Clientes (CodigoCliente)
 );
 
-alter session set nls_date_format='yyyy-mm-dd';
+SELECT DATE_FORMAT(FechaPedido, '%Y-%m-%d') AS FormattedFechaPedido FROM Pedidos;
 
 INSERT INTO Pedidos VALUES (1,'2006-01-17','2006-01-19','2006-01-19','Entregado','Pagado a plazos',5);
 INSERT INTO Pedidos VALUES (2,'2007-10-23','2007-10-28','2007-10-26','Entregado','La entrega llego antes de lo esperado',5);
@@ -200,7 +201,7 @@ INSERT INTO Pedidos VALUES (45,'2009-04-01','2009-03-04','2009-03-07','Entregado
 INSERT INTO Pedidos VALUES (46,'2009-04-03','2009-03-04','2009-03-05','Rechazado',NULL,23);
 INSERT INTO Pedidos VALUES (47,'2009-04-15','2009-03-17','2009-03-17','Entregado',NULL,23);
 INSERT INTO Pedidos VALUES (48,'2008-03-17','2008-03-30','2008-03-29','Entregado','Según el Cliente, el pedido llegó defectuoso',26);
-INSERT INTO Pedidos VALUES (49,'2008-07-12','2008-07-22','2008-07-230','Entregado','El pedido llegó 1 día tarde, pero no hubo queja por parte de la empresa compradora',26);
+INSERT INTO Pedidos VALUES (49,'2008-07-12','2008-07-22','2008-07-23','Entregado','El pedido llegó 1 día tarde, pero no hubo queja por parte de la empresa compradora',26);
 INSERT INTO Pedidos VALUES (50,'2008-03-17','2008-08-09',NULL,'Pendiente','Al parecer, el pedido se ha extraviado a la altura de Sotalbo (Ávila)',26);
 INSERT INTO Pedidos VALUES (51,'2008-10-01','2008-10-14','2008-10-14','Entregado','Todo se entregó a tiempo y en perfecto estado, a pesar del pésimo estado de las carreteras.',26);
 INSERT INTO Pedidos VALUES (52,'2008-12-07','2008-12-21',NULL,'Pendiente','El transportista ha llamado a Eva María para indicarle que el pedido llegará más tarde de lo esperado.',26);
@@ -272,18 +273,19 @@ INSERT INTO Pedidos VALUES (127,'2009-04-06','2009-04-10','2009-04-10','Entregad
 INSERT INTO Pedidos VALUES (128,'2008-11-10','2008-12-10','2008-12-29','Rechazado','El pedido ha sido rechazado por el cliente por el retraso en la entrega',38);
 
 CREATE TABLE Productos (
-  CodigoProducto varchar(15) NOT NULL,
-  Nombre varchar(70) NOT NULL,
-  Gama varchar(50) NOT NULL,
-  Dimensiones varchar(25) NULL,
-  Proveedor varchar(50) DEFAULT NULL,
-  Descripcion clob NULL,
-  CantidadEnStock smallint NOT NULL,
-  PrecioVenta number(15,2) NOT NULL,
-  PrecioProveedor number(15,2) DEFAULT NULL,
+  CodigoProducto VARCHAR(15) NOT NULL,
+  Nombre VARCHAR(70) NOT NULL,
+  Gama VARCHAR(50) NOT NULL,
+  Dimensiones VARCHAR(25) NULL,
+  Proveedor VARCHAR(50) DEFAULT NULL,
+  Descripcion TEXT NULL,
+  CantidadEnStock SMALLINT NOT NULL,
+  PrecioVenta DECIMAL(15,2) NOT NULL,
+  PrecioProveedor DECIMAL(15,2) DEFAULT NULL,
   PRIMARY KEY (CodigoProducto),
   CONSTRAINT Productos_gamaFK FOREIGN KEY (Gama) REFERENCES GamasProductos (Gama)
 );
+
 
 INSERT INTO Productos VALUES ('11679','Sierra de Poda 400MM','Herramientas','0,258','HiperGarden Tools','Gracias a la poda se consigue manipular un poco la naturaleza, dándole la forma que más nos guste. Este trabajo básico de jardinería también facilita que las plantas crezcan de un modo más equilibrado, y que las flores y los frutos vuelvan cada año con regularidad. Lo mejor es dar forma cuando los ejemplares son jóvenes, de modo que exijan pocos cuidados cuando sean adultos. Además de saber cuándo y cómo hay que podar, tener unas herramientas adecuadas para esta labor es también de vital importancia.',15,14,11);
 INSERT INTO Productos VALUES ('21636','Pala','Herramientas','0,156','HiperGarden Tools','Palas de acero con cresta de corte en la punta para cortar bien el terreno. Buena penetración en tierras muy compactas.',15,14,13);
@@ -564,15 +566,16 @@ INSERT INTO Productos VALUES ('OR-99','Mimosa DEALBATA Gaulois Astier  ','Orname
 
 
 CREATE TABLE DetallePedidos (
-  CodigoPedido integer NOT NULL,
-  CodigoProducto varchar(15) NOT NULL,
-  Cantidad integer NOT NULL,
-  PrecioUnidad number(15,2) NOT NULL,
-  NumeroLinea smallint NOT NULL,
-  PRIMARY KEY (CodigoPedido,CodigoProducto),
+  CodigoPedido INT NOT NULL,
+  CodigoProducto VARCHAR(15) NOT NULL,
+  Cantidad INT NOT NULL,
+  PrecioUnidad DECIMAL(15,2) NOT NULL,
+  NumeroLinea SMALLINT NOT NULL,
+  PRIMARY KEY (CodigoPedido, CodigoProducto),
   CONSTRAINT DetallePedidos_PedidoFK FOREIGN KEY (CodigoPedido) REFERENCES Pedidos (CodigoPedido),
   CONSTRAINT DetallePedidos_ProductoFK FOREIGN KEY (CodigoProducto) REFERENCES Productos (CodigoProducto)
 );
+
 
 INSERT INTO DetallePedidos VALUES (1,'FR-67',10,70,3);
 INSERT INTO DetallePedidos VALUES (1,'OR-127',40,4,1);
@@ -866,15 +869,18 @@ INSERT INTO DetallePedidos VALUES (117,'OR-146',17,4,2);
 INSERT INTO DetallePedidos VALUES (117,'OR-179',4,6,4);
 INSERT INTO DetallePedidos VALUES (128,'AR-004',15,1,1);
 INSERT INTO DetallePedidos VALUES (128,'OR-150',18,2,2);
+
 CREATE TABLE Pagos (
-  CodigoCliente integer NOT NULL,
-  FormaPago varchar(40) NOT NULL,
-  IDTransaccion varchar(50) NOT NULL,
-  FechaPago date NOT NULL,
-  Cantidad number(15,2) NOT NULL,
-  PRIMARY KEY (CodigoCliente,IDTransaccion),
+  CodigoCliente INT NOT NULL,
+  FormaPago VARCHAR(40) NOT NULL,
+  IDTransaccion VARCHAR(50) NOT NULL,
+  FechaPago DATE NOT NULL,
+  Cantidad DECIMAL(15,2) NOT NULL,
+  PRIMARY KEY (CodigoCliente, IDTransaccion),
   CONSTRAINT Pagos_clienteFK FOREIGN KEY (CodigoCliente) REFERENCES Clientes (CodigoCliente)
 );
+
+
 INSERT INTO Pagos VALUES (1,'PayPal','ak-std-000001','2008-11-10',2000);
 INSERT INTO Pagos VALUES (1,'PayPal','ak-std-000002','2008-12-10',2000);
 INSERT INTO Pagos VALUES (3,'PayPal','ak-std-000003','2009-01-16',5000);
