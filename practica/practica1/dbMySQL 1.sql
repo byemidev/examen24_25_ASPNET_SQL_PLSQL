@@ -76,9 +76,10 @@ SELECT d.nombre , (d.presupuesto - d.gastos) as presu_actual FROM departamento d
 SELECT d.nombre FROM departamento d WHERE nombre LIKE '_istemas'; 
 
 
-SELECT e.nombre, e.codigo , d.codigo 
+SELECT e.nombre, e.apellido1, e.codigo , e.codigo_departamento , d.codigo 
 FROM empleado e  
-INNER JOIN departamento d 
+JOIN departamento d 
 ON e.codigo_departamento = d.codigo 
+WHERE e.codigo_departamento IN (SELECT e.codigo_departamento FROM empleado WHERE e.apellido1 LIKE '%s')
 ORDER BY d.codigo ASC; 
 
