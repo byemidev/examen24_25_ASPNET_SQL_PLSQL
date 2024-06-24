@@ -1,6 +1,7 @@
-DROP DATABASE jardineria;
+empleadosempleadosDROP DATABASE jardineria;
 CREATE DATABASE jardineria;
-USE jardineria;
+
+use jardineria;
 
 CREATE TABLE Oficinas (
   CodigoOficina varchar(10) NOT NULL,
@@ -154,7 +155,8 @@ CREATE TABLE Pedidos (
   CONSTRAINT Pedidos_Cliente FOREIGN KEY (CodigoCliente) REFERENCES Clientes (CodigoCliente)
 );
 
-SELECT DATE_FORMAT(FechaPedido, '%Y-%m-%d') AS FormattedFechaPedido FROM Pedidos;
+SELECT FORMAT(FechaPedido, 'yyyy-MM-dd') AS FormattedFechaPedido 
+FROM Pedidos;
 
 INSERT INTO Pedidos VALUES (1,'2006-01-17','2006-01-19','2006-01-19','Entregado','Pagado a plazos',5);
 INSERT INTO Pedidos VALUES (2,'2007-10-23','2007-10-28','2007-10-26','Entregado','La entrega llego antes de lo esperado',5);
@@ -879,7 +881,7 @@ CREATE TABLE Pagos (
   PRIMARY KEY (CodigoCliente, IDTransaccion),
   CONSTRAINT Pagos_clienteFK FOREIGN KEY (CodigoCliente) REFERENCES Clientes (CodigoCliente)
 );
-
+jardineria
 
 INSERT INTO Pagos VALUES (1,'PayPal','ak-std-000001','2008-11-10',2000);
 INSERT INTO Pagos VALUES (1,'PayPal','ak-std-000002','2008-12-10',2000);
