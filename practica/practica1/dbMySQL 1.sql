@@ -41,6 +41,7 @@ INSERT INTO empleado VALUES(12, '41234836R', 'Irene','Salas', 'Flores', NULL);
 INSERT INTO empleado VALUES(13, '82635162B', 'Juan Antonio','Saez', 'Guerrero', NULL);
 
 
+
 --  1 MOSTRAR EL PRIMER APELLIDO DE TODOS LOS EMPLEADOS 
 SELECT apellido1 FROM empleado;
 
@@ -82,4 +83,3 @@ JOIN departamento d
 ON e.codigo_departamento = d.codigo 
 WHERE e.codigo_departamento IN (SELECT e.codigo_departamento FROM empleado WHERE e.apellido1 LIKE '%s')
 ORDER BY d.codigo ASC; 
-
