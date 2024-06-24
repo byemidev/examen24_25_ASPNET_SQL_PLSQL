@@ -75,7 +75,7 @@ SELECT d.nombre , (d.presupuesto - d.gastos) as presu_actual FROM departamento d
 -- curiosidad: el signo _ interoreta cualquier character 
 SELECT d.nombre FROM departamento d WHERE nombre LIKE '_istemas'; 
 
-
+-- Join con subquery anidada 
 SELECT e.nombre, e.apellido1, e.codigo , e.codigo_departamento , d.codigo 
 FROM empleado e  
 JOIN departamento d 
