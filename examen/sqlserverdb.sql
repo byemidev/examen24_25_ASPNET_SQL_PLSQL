@@ -5,7 +5,7 @@
 -- END
 
 -- Create a new database named 'ACADEMIA'
--- CREATE DATABASE ACADEMIA;
+CREATE DATABASE ACADEMIA;
 
 -- Switch to the newly created database 'ACADEMIA'
 USE ACADEMIA;

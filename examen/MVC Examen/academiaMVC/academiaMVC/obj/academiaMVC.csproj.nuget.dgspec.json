@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\goeth\\Documents\\repos\\examen24_25_ASPNET_SQL_PLSQL\\examen\\MVC Examen\\academiaMVC\\academiaMVC\\academiaMVC.csproj": {}
+    "C:\\Users\\Cursostardes\\Documents\\repos\\examen24_25_ASPNET_SQL_PLSQL\\examen\\MVC Examen\\academiaMVC\\academiaMVC\\academiaMVC.csproj": {}
   },
   "projects": {
-    "C:\\Users\\goeth\\Documents\\repos\\examen24_25_ASPNET_SQL_PLSQL\\examen\\MVC Examen\\academiaMVC\\academiaMVC\\academiaMVC.csproj": {
+    "C:\\Users\\Cursostardes\\Documents\\repos\\examen24_25_ASPNET_SQL_PLSQL\\examen\\MVC Examen\\academiaMVC\\academiaMVC\\academiaMVC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\goeth\\Documents\\repos\\examen24_25_ASPNET_SQL_PLSQL\\examen\\MVC Examen\\academiaMVC\\academiaMVC\\academiaMVC.csproj",
+        "projectUniqueName": "C:\\Users\\Cursostardes\\Documents\\repos\\examen24_25_ASPNET_SQL_PLSQL\\examen\\MVC Examen\\academiaMVC\\academiaMVC\\academiaMVC.csproj",
         "projectName": "academiaMVC",
-        "projectPath": "C:\\Users\\goeth\\Documents\\repos\\examen24_25_ASPNET_SQL_PLSQL\\examen\\MVC Examen\\academiaMVC\\academiaMVC\\academiaMVC.csproj",
-        "packagesPath": "C:\\Users\\goeth\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\goeth\\Documents\\repos\\examen24_25_ASPNET_SQL_PLSQL\\examen\\MVC Examen\\academiaMVC\\academiaMVC\\obj\\",
+        "projectPath": "C:\\Users\\Cursostardes\\Documents\\repos\\examen24_25_ASPNET_SQL_PLSQL\\examen\\MVC Examen\\academiaMVC\\academiaMVC\\academiaMVC.csproj",
+        "packagesPath": "C:\\Users\\Cursostardes\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Cursostardes\\Documents\\repos\\examen24_25_ASPNET_SQL_PLSQL\\examen\\MVC Examen\\academiaMVC\\academiaMVC\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\goeth\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Cursostardes\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -45,6 +49,16 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.6, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -64,7 +78,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

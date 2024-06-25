@@ -3,6 +3,46 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    
+   <div>
+       <h3>MENU</h3>
+    <!--Boton: alta alumno-->
+        <button class="btn-outline-primary"><a href="alumno/create">1.- Crear alumno</a> </button>
+        <button class="btn-outline-primary"><a href="alumno/index">2.- Matricula a un alumno</a> </button>
+   </div>
+    <div>
+        @model IEnumerable<academiaMVC.Models.Curso>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.id)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.nombre)
+                    </th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.id)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.nombre)
+                        </td>
+                        <td>
+                                @Html.ActionLink("Ver alumnos", "AlumnosMatriculados", new { id=item.id }) 
+                        </td>
+                 
+                    </tr>
+                }
+            </tbody>
+        </table>
+    <!-- Aqui el filtro para cursos-->
+    </div>
+
 </div>
